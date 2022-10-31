@@ -1,22 +1,16 @@
 default: &default
-  adapter:  postgresql
-  encoding: unicode
-  port:     <%= ENV.fetch("POSTGRESQL_PORT", "5432") %>
-  pool:     <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: <%= ENV['POSTGRESQL_USER_NAME'] %>
-  password: <%= ENV.fetch("POSTGRESQL_PASSWORD", "myS3cr3tP4ssw0rd") %>
-  host:     <%= ENV['POSTGRESQL_HOST'] %>
+  adapter: postgresql
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 5000
 
 development:
   <<: *default
-  database: <%= ENV['POSTGRESQL_DB'] %>-development
-  # host: db
+  database: flatiron_mod3_development
 
 test:
   <<: *default
-  database: <%= ENV['POSTGRESQL_DB'] %>-test
-  # host: db
+  database: flatiron_mod3_test
 
 production:
   <<: *default
-  database: <%= ENV['POSTGRESQL_DB'] %>
+  database: flatiron_mod3_production
