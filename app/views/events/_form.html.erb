@@ -22,8 +22,9 @@
   </div>
 
   <div class="actions">
-    <%= f.submit "Сохранить", class: "btn btn-primary" %>
-    или <%= link_to "вернуться", "/" %>
+    <%= f.submit t "views.form.save", class: "btn btn-primary" %>
+    <%= t "views.form.or" %>
+    <%= link_to I18n.t("views.form.back"), "/" %>
   </div>
 <% end %>
 

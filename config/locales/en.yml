@@ -31,3 +31,29 @@
 
 en:
   hello: "Hello world"
+  app:
+    company: "Leonid Traikovskii && Goodprogrammer"
+  views:
+    navi:
+      sign_in: "Sign in"
+      sign_up: "Sign up"
+      sign_out: "Sign out"
+      view_profile: "View profile"
+    form:
+      save: "Save"
+      back: "Back"
+      or: "or"
+    users:
+      editing: "Editing user"
+      users: "Users"
+      new_user: "New user"
+      no_events: "User did not organize any event yet"
+      user_events: "Organized events"
+      edit_profile: "Edit profile"
+      edit_password: "Change password"
+      show: "Show this user"
+    events:
+      editing: "Editing event"
+      start: "Start a New event!"
+      events: "Events"
+      new_event: "New Event"

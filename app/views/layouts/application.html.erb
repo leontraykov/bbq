@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Bbq</title>
+    <title><%= t 'app.name' %></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -27,5 +27,12 @@
     <div class="container">
       <%= yield %>
     </div>
+
+  <div class="container">
+    <footer class="text-right small fixed-bottom px-2 bg-light text-gray">
+      <%# Для вывода названия компании используем хелпер I18n.t %>
+      <p class="mx-4"><%= t 'app.company' %> &copy; 2022</p>
+    </footer>
+  </div>
   </body>
 </html>
