@@ -30,6 +30,7 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
+  are_you_sure: "Are you sure?"
   hello: "Hello world"
   errors: 
     one:  "There is %{count} error in your form"
@@ -61,4 +62,5 @@ en:
       start: "Start a New event!"
       events: "Events"
       new_event: "New Event"
-      change: "Change"
+      change: "Change event"
+      delete: "Delete event"

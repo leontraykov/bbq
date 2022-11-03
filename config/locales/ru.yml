@@ -1,4 +1,5 @@
 ru:
+  are_you_sure: "Вы уверены?"
   activerecord:
     models:
       user: "Пользователь"
@@ -52,6 +53,5 @@ ru:
       start: "Объявить о новом событии!"
       events: "События"
       new_event: "Новое событие"
-      change: "Изменить"
-      
-
+      change: "Изменить событие"
+      delete: "Удалить событие"
