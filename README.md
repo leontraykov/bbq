@@ -6,5 +6,4 @@ Start the event, describe a way that party will go, set a location and invite yo
 
 This application is bilingual - english and russian languages are available.
 
-choose `en` for english language and `ru` fo russian in `config.i18n.default_locale = :ru` 
-
+choose `en` for english language and `ru` fo russian in `config.i18n.default_locale = :ru` in config/application.rb
