@@ -1,29 +1,33 @@
 ru:
   activerecord:
     models:
-      user: 'Пользователь'
-      event: 'Событие'
+      user: "Пользователь"
+      event: "Событие"
     attributes:
       user:
-        email: 'Email'
-        name: 'Имя'
-        password: 'Пароль'
-        password_comfirmation: 'Подтверждение пароля'
+        email: "Email"
+        name: "Имя"
+        password: "Пароль"
+        password_comfirmation: "Подтверждение пароля"
       event:
-        title: 'Название'
-        address: 'Место проведения'
-        datetime: 'Дата и время'
-        description: 'Описание'
+        title: "Название"
+        address: "Место проведения"
+        datetime: "Дата и время"
+        description: "Описание"
   controllers:
     events:
-      created:   'Событие успешно создано!'
-      updated:   'Событие обновлено!'
-      destroyed: 'Событие удалено!'
+      created:   "Событие успешно создано!"
+      updated:   "Событие обновлено!"
+      destroyed: "Событие удалено!"
     users:
-      updated: 'Данные вашего профиля обновлены!'
+      updated: "Данные вашего профиля обновлены!"
+  errors:
+    one:  "В вашей форме %{count} ошибка"
+    few:  "В вашей форме %{count} ошибки"
+    many: "В вашей форме %{count} ошибок"
   app:
-    name: 'Шашлыки'
-    company: 'Леонид Трайковский && Хороший программист'
+    name: "Шашлыки"
+    company: "Леонид Трайковский && Хороший программист"
   views:
     navi:
       sign_in: "Войти"
@@ -50,3 +54,4 @@ ru:
       new_event: "Новое событие"
       change: "Изменить"
       
+

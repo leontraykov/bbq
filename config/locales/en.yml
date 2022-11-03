@@ -31,6 +31,10 @@
 
 en:
   hello: "Hello world"
+  errors: 
+    one:  "There is %{count} error in your form"
+    few:  "There are %{count} errors in your form"
+    many: "There are %{count} errors in your form"
   app:
     company: "Leonid Traikovskii && Goodprogrammer"
   views:
