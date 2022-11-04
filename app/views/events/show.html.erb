@@ -18,12 +18,23 @@
             <% if current_user_can_edit?(@event) %>
               <div class="buffer-top my-3">
                 <%= link_to I18n.t("views.events.change"), edit_event_path(@event),
-                  class: "btn btn-primary" %>
+                class: "btn btn-primary", title: I18n.t("views.events.change") %>
               </div>
               <div class="buffer-top mx-3 my-3">
+<%# 
                 <%= button_to I18n.t("views.events.delete"), event_path(@event), 
-                method: :delete, 
-                form: {data: { turbo_confirm: I18n.t("are_you_sure") }}, class: "btn btn-warning"%>
+                form:{ data:{"data-turbo-confirm": "Are you sure?"}}, method: "delete" %>
+
+<%#      ПРОДОЛЖАЮ ЧИНИТЬ ПОДТВЕРЖДЕНИЕ УДАЛЕНИЯ.ТУДУ ТУРБО
+
+                <%= button_to I18n.t("views.events.delete"), event_path(@event),
+                method: :delete,
+                form: {data: {turbo_confirm: "DELETE THIS EVENT?"}},
+                class: 'text-red text-sm' %>
+ 
+                <%= button_to "DELETE", event_path(@event), 
+                method: :delete, class: "btn btn-danger",
+                title: I18n.t("views.events.delete"), form: {data: {turbo_confirm: "are_you_sure"}} %>
               </div>
             <% end %>
           </div>

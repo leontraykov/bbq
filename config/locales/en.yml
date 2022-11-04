@@ -30,6 +30,11 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
+  cancel_acc: "Cancel my account"
+  unhappy: "Unhappy?"
+  delete_acc: "Delete my account"
+  update: "Update"
+  characters_minimum: "characters minimum"
   are_you_sure: "Are you sure?"
   hello: "Hello world"
   errors: 
@@ -48,6 +53,8 @@ en:
       save: "Save"
       back: "Back"
       or: "or"
+      leave_blank: "(leave blank if you don't want to change it)"
+      need_password: "(we need your current password to confirm your changes)"
     users:
       editing: "Editing user"
       users: "Users"
@@ -56,6 +63,7 @@ en:
       user_events: "Organized events"
       edit_profile: "Edit profile"
       edit_password: "Change password"
+      edit_data: "Edit users data"
       show: "Show this user"
     events:
       editing: "Editing event"
@@ -64,3 +72,8 @@ en:
       new_event: "New Event"
       change: "Change event"
       delete: "Delete event"
+    links:
+      forgot: "Forgot your password?"
+      didnt_conf_instr: "Didn't receive confirmation instructions?"
+      didnt_unlock_instr: "Didn't receive unlock instructions?"
+      sign_in_with: "Sign in with "
