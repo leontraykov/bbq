@@ -20,21 +20,16 @@
                 <%= link_to I18n.t("views.events.change"), edit_event_path(@event),
                 class: "btn btn-primary", title: I18n.t("views.events.change") %>
               </div>
-              <div class="buffer-top mx-3 my-3">
-<%# 
-                <%= button_to I18n.t("views.events.delete"), event_path(@event), 
-                form:{ data:{"data-turbo-confirm": "Are you sure?"}}, method: "delete" %>
+              <div class="buffer-top my-3">
 
-<%#      ПРОДОЛЖАЮ ЧИНИТЬ ПОДТВЕРЖДЕНИЕ УДАЛЕНИЯ.ТУДУ ТУРБО
+<%# // ALARM! confirmation doesn't work // НЕ РАБОТАЕТ ПОДТВЕРЖДЕНИЕ УДАЛЕНИЯ СОБЫТИЯ // %>
 
-                <%= button_to I18n.t("views.events.delete"), event_path(@event),
+                <%= button_to t('views.events.delete'), event_path(@event),
+                form: { data: { turbo_confirm: t('are_you_sure') } },
                 method: :delete,
-                form: {data: {turbo_confirm: "DELETE THIS EVENT?"}},
-                class: 'text-red text-sm' %>
- 
-                <%= button_to "DELETE", event_path(@event), 
-                method: :delete, class: "btn btn-danger",
-                title: I18n.t("views.events.delete"), form: {data: {turbo_confirm: "are_you_sure"}} %>
+                title: t('views.events.delete'),
+                class: 'btn btn-danger' %>
+
               </div>
             <% end %>
           </div>

@@ -10,7 +10,7 @@
     </div>
 
     <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
-      <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+      <div><%= t("waiting_info") %> <%= resource.unconfirmed_email %></div>
     <% end %>
 
     <div class="field d-flex justify-content-start">
@@ -48,6 +48,8 @@
 
     <div class="actions">
       <%= f.submit t("update"), class:" btn-lg btn-warning my-3" %>
+      <%= t 'views.form.or' %>
+      <%= button_to I18n.t("views.form.back"), :back, class:"btn btn-primary" %>
     </div>
   </div>
 <% end %>
@@ -55,5 +57,3 @@
 <h3><%= t("delete_acc") %></h3>
 
 <p><%= t("unhappy") %> <%= button_to I18n.t("cancel_acc"), registration_path(resource_name), class:"btn btn-lg btn-danger", data: { confirm: "Are you sure?" }, method: :delete %></p>
-
-<%= link_to "Back", :back %>

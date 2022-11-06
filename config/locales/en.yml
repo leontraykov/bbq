@@ -30,6 +30,8 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
+  send_instructions: "Send me reset password instructions"
+  waiting_info: "Currently waiting confirmation for:"
   cancel_acc: "Cancel my account"
   unhappy: "Unhappy?"
   delete_acc: "Delete my account"
