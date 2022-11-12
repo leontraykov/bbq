@@ -56,4 +56,9 @@
 
 <h3><%= t("delete_acc") %></h3>
 
-<p><%= t("unhappy") %> <%= button_to I18n.t("cancel_acc"), registration_path(resource_name), class:"btn btn-lg btn-danger", data: { confirm: "Are you sure?" }, method: :delete %></p>
+<p><%= t("unhappy") %> <%= button_to I18n.t("cancel_acc"),
+  registration_path(resource_name),
+  class:"btn btn-lg btn-danger",
+  form: { data: { turbo_confirm: t('are_you_sure') } },
+  method: :delete %>
+</p>
